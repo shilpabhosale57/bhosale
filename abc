@@ -1,0 +1,10 @@
+main: main.o push.o pop.o display.o
+	gcc -o main main.o push.o pop.o display.o
+main: main.c
+	gcc -o main.o -c main.c
+push: push.c
+	gcc -o push.o -c push.c
+pop: pop.c
+	gcc -o pop.o -c pop.c
+display: display.c
+	gcc -o display.o -c display.c
